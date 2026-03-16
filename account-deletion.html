@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Account Deletion – Yarn Stasher</title>
   <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,10 +17,12 @@
         <img src="images/logo.png" alt="Yarn Stasher">
         <span>Yarn Stasher</span>
       </a>
-      <ul>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav-links">☰</button>
+      <ul class="nav-links" id="main-nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="privacy-policy.html">Privacy Policy</a></li>
         <li><a href="terms.html">Terms</a></li>
+        <li><a href="eula.html">EULA</a></li>
         <li><a href="account-deletion.html">Account Deletion</a></li>
       </ul>
     </nav>
@@ -27,7 +32,33 @@
     <h1>Account Deletion</h1>
     <p class="muted">Last updated: March 2025</p>
     <div class="legal-content">
-      <p>Add your account deletion instructions here. You can copy the text from your current site at <a href="https://yarnstasher.com/account-deletion">yarnstasher.com/account-deletion</a> until this becomes the live site.</p>
+      <h2>How can I delete my account?</h2>
+      <p>Yarn Stasher lets you delete your account directly inside the app. Deletion is permanent and happens immediately, so make sure you export anything you need before starting.</p>
+
+      <h2>How to Delete Your Account</h2>
+      <ol>
+        <li>Open the Yarn Stasher app and log in.</li>
+        <li>Go to Settings → Account.</li>
+        <li>Scroll to the bottom and tap Delete account.</li>
+        <li>When the confirmation prompt appears, review the warning and tap Delete account again to confirm.</li>
+      </ol>
+      <p>You'll see an on-screen confirmation right away. The account and associated data are removed instantly.</p>
+
+      <h2>Data Removed Immediately</h2>
+      <ul>
+        <li>Profile information (email, display name, avatar)</li>
+        <li>Saved projects, stash items, notes, and preferences</li>
+        <li>Any in-app purchases tied to your profile</li>
+        <li>Support conversations linked to your account</li>
+      </ul>
+
+      <h2>Data We Temporarily Retain</h2>
+      <p>A non-reversible hash of your email address, kept solely to prevent fraudulent re-signups and comply with abuse monitoring. This hash cannot be used to recreate your email.</p>
+
+      <h2>Need Help?</h2>
+      <p>If you can't access the app or the button isn't working, email <a href="mailto:support@yarnstasher.com">support@yarnstasher.com</a> from your registered address with the subject "Delete my Yarn Stasher account," and we'll process it manually.</p>
+
+      <img src="images/account-deletion-dialog.png" alt="Account deletion confirmation dialog in the app" class="account-deletion-img" width="400" loading="lazy">
     </div>
   </main>
 
@@ -36,8 +67,10 @@
     <nav>
       <a href="privacy-policy.html">Privacy Policy</a>
       <a href="terms.html">Terms</a>
+      <a href="eula.html">EULA</a>
       <a href="account-deletion.html">Account Deletion</a>
     </nav>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
