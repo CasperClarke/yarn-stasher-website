@@ -1,0 +1,182 @@
+:root {
+  --bg: #0f0f0f;
+  --surface: #1a1a1a;
+  --text: #f5f5f5;
+  --accent: #9c6bde;
+  --accent-light: #b88ce8;
+  --muted: #888;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+header {
+  background: var(--surface);
+  padding: 1rem 2rem;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+nav {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: var(--accent-light);
+}
+
+main {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.hero h1 {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
+  margin: 0 0 1rem;
+  line-height: 1.2;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: var(--muted);
+  margin: 0 0 2rem;
+}
+
+.cta {
+  display: inline-block;
+  padding: 0.85rem 1.75rem;
+  background: var(--accent);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.cta:hover {
+  background: var(--accent-light);
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent-light);
+}
+
+section p {
+  color: var(--muted);
+  margin: 0 0 1rem;
+}
+
+.coming-soon ul {
+  padding-left: 1.25rem;
+}
+
+.coming-soon li {
+  margin-bottom: 0.75rem;
+  color: var(--muted);
+}
+
+.coming-soon strong {
+  color: var(--text);
+}
+
+.contact a {
+  color: var(--accent-light);
+}
+
+.address {
+  font-style: italic;
+}
+
+footer {
+  background: var(--surface);
+  padding: 2rem;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  margin-top: 3rem;
+}
+
+footer p {
+  margin: 0 0 0.5rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+footer nav {
+  justify-content: center;
+}
+
+footer nav a {
+  font-size: 0.9rem;
+}
+
+/* Policy / legal pages */
+.legal-content {
+  max-width: 60ch;
+}
+
+.legal-content h2 {
+  font-size: 1.25rem;
+  margin-top: 2rem;
+}
+
+.muted {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
