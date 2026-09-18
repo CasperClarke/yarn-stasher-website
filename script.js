@@ -80,4 +80,58 @@ document.addEventListener('DOMContentLoaded', () => {
       if (window.innerWidth > 900) closeMenu();
     });
   }
+
+  document.querySelectorAll('.guide-howto').forEach((howto) => {
+    const pins = [...howto.querySelectorAll('.guide-pin[data-mark]')];
+    const steps = [...howto.querySelectorAll('.guide-legend > li')];
+    if (!pins.length || !steps.length) return;
+
+    steps.forEach((step, i) => {
+      if (!step.dataset.mark) step.dataset.mark = String(i + 1);
+    });
+
+    let sticky = null;
+
+    const setActive = (mark) => {
+      pins.forEach((pin) => pin.classList.toggle('is-active', pin.dataset.mark === mark));
+      steps.forEach((step) => step.classList.toggle('is-active', step.dataset.mark === mark));
+    };
+
+    const restore = () => {
+      if (sticky) {
+        setActive(sticky);
+      } else {
+        pins.forEach((pin) => pin.classList.remove('is-active'));
+        steps.forEach((step) => step.classList.remove('is-active'));
+      }
+    };
+
+    pins.forEach((pin) => {
+      pin.addEventListener('mouseenter', () => setActive(pin.dataset.mark));
+      pin.addEventListener('focus', () => setActive(pin.dataset.mark));
+      pin.addEventListener('mouseleave', restore);
+      pin.addEventListener('blur', restore);
+      pin.addEventListener('click', () => {
+        sticky = pin.dataset.mark;
+        setActive(sticky);
+        const step = steps.find((item) => item.dataset.mark === sticky);
+        step?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      });
+      pin.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          pin.click();
+        }
+      });
+    });
+
+    steps.forEach((step) => {
+      step.addEventListener('mouseenter', () => setActive(step.dataset.mark));
+      step.addEventListener('mouseleave', restore);
+      step.addEventListener('click', () => {
+        sticky = step.dataset.mark;
+        setActive(sticky);
+      });
+    });
+  });
 });

@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://yarnstasher.com/user-guide/">
+  <meta name="description" content="Yarn Stasher user guide — organize your stash, use Smart Scan, sync with Ravelry, and manage your account.">
+  <meta property="og:title" content="User Guide – Yarn Stasher">
+  <meta property="og:description" content="A printable guide to Yarn Stasher: stash, Smart Scan, sync, Ravelry, and settings.">
+  <meta property="og:image" content="https://yarnstasher.com/images/stash-hero.png">
+  <meta property="og:url" content="https://yarnstasher.com/user-guide/">
+  <meta property="og:type" content="article">
+  <title>User Guide – Yarn Stasher</title>
+  <link rel="icon" type="image/png" href="../images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css?v=guide-10">
+</head>
+<body class="guide-page">
+  <header>
+    <nav>
+      <a href="../index.html" class="logo">
+        <img src="../images/logo.png?v=guide-9" alt="Yarn Stasher">
+        <span>Yarn Stasher</span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav-links">☰</button>
+      <ul class="nav-links" id="main-nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="index.html" aria-current="page">User Guide</a></li>
+        <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="../terms.html">Terms</a></li>
+        <li><a href="../eula.html">EULA</a></li>
+        <li><a href="../account-deletion.html">Account Deletion</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="guide-main">
+    <header class="guide-hero">
+      <p class="guide-kicker">Yarn Stasher</p>
+      <h1>User Guide</h1>
+      <p class="muted">Version 1.13 · September 2026</p>
+      <p class="guide-lede">
+        Numbered rings mark each button. Purple chips such as <span class="guide-tap">Filters</span> match the app.
+      </p>
+      <div class="guide-actions no-print">
+        <button type="button" class="cta guide-print-btn" onclick="window.print()">Print / Save as PDF</button>
+        <a class="guide-secondary-link" href="#getting-started">Start reading</a>
+      </div>
+    </header>
+
+    <div class="guide-toc" aria-labelledby="toc-heading">
+      <h2 id="toc-heading">Contents</h2>
+      <ol>
+        <li><a href="#getting-started">Getting started</a></li>
+        <li><a href="#stash-home">Stash home</a></li>
+        <li><a href="#browse-organize">Browse &amp; organize</a></li>
+        <li><a href="#add-edit-yarn">Add, edit &amp; delete yarn</a></li>
+        <li><a href="#photos-smart-scan">Photos &amp; Smart Scan</a></li>
+        <li><a href="#yarn-fields">Yarn fields</a></li>
+        <li><a href="#selection-batch">Selection &amp; groups</a></li>
+        <li><a href="#credits">Smart Scan credits</a></li>
+        <li><a href="#sync-backup">Sync &amp; backup</a></li>
+        <li><a href="#ravelry">Ravelry</a></li>
+        <li><a href="#ravelry-database">Ravelry yarn database</a></li>
+        <li><a href="#settings">Settings</a></li>
+        <li><a href="#account">Account</a></li>
+        <li><a href="#offline">Offline</a></li>
+        <li><a href="#troubleshooting">Troubleshooting</a></li>
+        <li><a href="#privacy-support">Privacy &amp; support</a></li>
+        <li><a href="#glossary">Glossary</a></li>
+      </ol>
+    </div>
+
+    <article class="guide-content">
+
+      <section id="getting-started" class="guide-section guide-section--first">
+        <h2><span class="guide-secnum">1</span> Getting started</h2>
+        <p>When you open Yarn Stasher you can sign in or continue as a guest. Guest mode keeps yarn on this device until you create an account and choose to transfer it.</p>
+        <div class="guide-howto">
+          <figure class="guide-shot">
+            <div class="guide-phone">
+              <img src="../images/user-guide/welcome.png?v=guide-9" alt="Welcome screen with Get Started" width="1080" height="2404" loading="lazy">
+              <ol class="guide-pins">
+                <li class="guide-pin guide-pin--above" style="--x:50%; --y:77.2%; --rw:76.8%; --rh:4.8%; --rr:999px;" data-mark="1" tabindex="0" role="button" aria-label="Step 1: Get Started"><span class="guide-pin-n">1</span></li>
+              </ol>
+            </div>
+            <figcaption>Welcome — tap Get Started to sign in. Guest is on the next screen.</figcaption>
+          </figure>
+          <ol class="guide-legend">
+            <li data-mark="1"><span class="guide-n">1</span> Tap <span class="guide-tap">Get Started</span> for email, Google, Facebook, or Apple (iOS / macOS). To skip an account, use <span class="guide-tap">Browse as Guest</span> on Sign In.</li>
+          </ol>
+        </div>
+        <div class="guide-howto guide-print-break">
+          <figure class="guide-shot">
+            <div class="guide-phone">
+              <img src="../images/user-guide/sign-in.png?v=guide-9" alt="Sign In screen with email, social sign-in, and Browse as Guest" width="1080" height="2404" loading="lazy">
+              <ol class="guide-pins">
+                <li class="guide-pin guide-pin--above" style="--x:50%; --y:51.5%; --rw:89.3%; --rh:5.2%; --rr:999px;" data-mark="1" tabindex="0" role="button" aria-label="Step 1: Sign In"><span class="guide-pin-n">1</span></li>
+                <li class="guide-pin guide-pin--below" style="--x:50%; --y:57.9%; --rw:89.3%; --rh:5.0%; --rr:999px;" data-mark="2" tabindex="0" role="button" aria-label="Step 2: Create Account"><span class="guide-pin-n">2</span></li>
+                <li class="guide-pin guide-pin--below" style="--x:50%; --y:82.2%; --rw:89.3%; --rh:5.2%; --rr:999px;" data-mark="3" tabindex="0" role="button" aria-label="Step 3: Browse as Guest"><span class="guide-pin-n">3</span></li>
+              </ol>
+            </div>
+            <figcaption>Sign In — email, social accounts, or guest.</figcaption>
+          </figure>
+          <ol class="guide-legend">
+            <li data-mark="1"><span class="guide-n">1</span> Enter email and password, then tap <span class="guide-tap">Sign In</span>.</li>
+            <li data-mark="2"><span class="guide-n">2</span> Tap <span class="guide-tap">Create New Account</span> for email and password. Yarn Stasher sends a verification email.</li>
+            <li data-mark="3"><span class="guide-n">3</span> Or tap <span class="guide-tap">Browse as Guest</span>. Google, Facebook, and Apple buttons are on this screen too.</li>
+          </ol>
+        </div>
+        <aside class="guide-callout">
+          <strong>After guest → sign-in:</strong> a dialog may offer to transfer your guest stash and scan credits. Choose transfer or skip. Guest data stays on the device until you transfer. You can still link Ravelry as a guest.
+        </aside>
+      </section>
+
+      <section id="stash-home" class="guide-section">
+        <h2><span class="guide-secnum">2</span> Stash home</h2>
+        <p>This is the main screen after welcome or sign-in. Rings mark each control; the number sits beside it.</p>
+        <div class="guide-howto">
+          <figure class="guide-shot">
+            <div class="guide-phone">
+              <img src="../images/user-guide/stash-grid.png?v=guide-9" alt="Stash grid with Filters, sort, menu, and Add Yarn" width="1080" height="2404" loading="lazy">
+              <ol class="guide-pins">
+                <li class="guide-pin guide-pin--below" style="--x:17.5%; --y:16.7%; --rw:20.6%; --rh:4.0%; --rr:999px;" data-mark="1" tabindex="0" role="button" aria-label="Step 1: Filters"><span class="guide-pin-n">1</span></li>
+                <li class="guide-pin guide-pin--below" style="--x:63.4%; --y:16.7%; --rw:20.5%; --rh:4.0%; --rr:999px;" data-mark="2" tabindex="0" role="button" aria-label="Step 2: Sort"><span class="guide-pin-n">2</span></li>
+                <li class="guide-pin guide-pin--below" style="--x:88.4%; --y:16.7%; --rw:6.5%; --rh:3.6%; --rr:10px;" data-mark="3" tabindex="0" role="button" aria-label="Step 3: List or grid"><span class="guide-pin-n">3</span></li>
+                <li class="guide-pin guide-pin--above" style="--x:93.8%; --y:7.9%; --rw:6.2%; --rh:3.2%; --rr:10px;" data-mark="4" tabindex="0" role="button" aria-label="Step 4: Menu"><span class="guide-pin-n">4</span></li>
+                <li class="guide-pin guide-pin--above" style="--x:83.2%; --y:7.9%; --rw:6.2%; --rh:3.2%; --rr:10px;" data-mark="5" tabindex="0" role="button" aria-label="Step 5: Sync"><span class="guide-pin-n">5</span></li>
+                <li class="guide-pin guide-pin--left" style="--x:50.0%; --y:93.2%; --rw:30.1%; --rh:5.6%; --rr:999px;" data-mark="6" tabindex="0" role="button" aria-label="Step 6: Add Yarn"><span class="guide-pin-n">6</span></li>
+              </ol>
+            </div>
+            <figcaption>Stash grid — rings mark the buttons; numbers sit beside them.</figcaption>
+          </figure>
+          <ol class="guide-legend">
+            <li data-mark="1"><span class="guide-n">1</span> Tap <span class="guide-tap">Filters</span> to search and narrow the stash.</li>
+            <li data-mark="2"><span class="guide-n">2</span> Tap the sort chip (here <span class="guide-tap">Brand</span>) to change sort order. The arrow beside it flips A–Z / Z–A.</li>
+            <li data-mark="3"><span class="guide-n">3</span> Tap the list/grid icon to switch views.</li>
+            <li data-mark="4"><span class="guide-n">4</span> Tap <span class="guide-tap">☰</span> for credits, About, Settings, and sign in or out.</li>
+            <li data-mark="5"><span class="guide-n">5</span> Tap the cloud icon to sync (shown when signed in, or when a guest has Ravelry linked).</li>
+            <li data-mark="6"><span class="guide-n">6</span> Tap <span class="guide-tap">+ Add Yarn</span> to create a yarn.</li>
+          </ol>
+        </div>
+        <ul>
+          <li><strong>Yarn count</strong> — “54 yarns”, or “12 of 54” when filters are on.</li>
+          <li><strong>Offline banner</strong> — appears at the top with no internet.</li>
+          <li><strong>Empty stash</strong> — prompts you to add yarn.</li>
+          <li><strong>Pull to refresh</strong> — pull down to sync when online.</li>
+        </ul>
+        <h3>Menu</h3>
+        <div class="guide-howto">
+          <figure class="guide-shot">
+            <div class="guide-phone">
+              <img src="../images/user-guide/menu.png?v=guide-9" alt="Open menu with credits, Settings, About, and Buy" width="1080" height="2404" loading="lazy">
+              <ol class="guide-pins">
+                <li class="guide-pin guide-pin--left" style="--x:62.5%; --y:34.5%; --rw:63%; --rh:15%; --rr:14px;" data-mark="1" tabindex="0" role="button" aria-label="Step 1: Home About Settings"><span class="guide-pin-n">1</span></li>
+                <li class="guide-pin guide-pin--left" style="--x:66%; --y:54%; --rw:58%; --rh:14%; --rr:16px;" data-mark="2" tabindex="0" role="button" aria-label="Step 2: Smart Scan credits"><span class="guide-pin-n">2</span></li>
+              </ol>
+            </div>
+            <figcaption>Menu — destinations, credits, and sign in or out.</figcaption>
+          </figure>
+          <ol class="guide-legend">
+            <li data-mark="1"><span class="guide-n">1</span> <span class="guide-tap">Home</span>, <span class="guide-tap">About</span>, and <span class="guide-tap">Settings</span>. Sign Out / Sign In is at the top of the menu.</li>
+            <li data-mark="2"><span class="guide-n">2</span> <strong>Smart Scan Credits</strong> shows your remaining scans. Tap <span class="guide-tap">Buy</span> for more.</li>
+          </ol>
+        </div>
+        <h3>Back</h3>
+        <p>Back leaves selection first, then closes Filters, then clears filters, then leaves stash. On a phone that is the system Back control; on iOS it is the back arrow at the top of the screen.</p>
+      </section>
+
+      <section id="browse-organize" class="guide-section">
+        <h2><span class="guide-secnum">3</span> Browse &amp; organize</h2>
+        <h3>List view</h3>
+        <div class="guide-howto">
+          <figure class="guide-shot">
+            <div class="guide-phone">
+              <img src="../images/user-guide/stash-overview.png?v=guide-9" alt="Stash list view with compact yarn rows" width="1080" height="2404" loading="lazy">
+              <ol class="guide-pins">
+                <li class="guide-pin guide-pin--below" style="--x:88.4%; --y:16.7%; --rw:6.5%; --rh:3.6%; --rr:10px;" data-mark="1" tabindex="0" role="button" aria-label="Step 1: Grid or list"><span class="guide-pin-n">1</span></li>
+                <li class="guide-pin guide-pin--right" style="--x:50%; --y:39.5%; --rw:88%; --rh:11%; --rr:14px;" data-mark="2" tabindex="0" role="button" aria-label="Step 2: Open a yarn"><span class="guide-pin-n">2</span></li>
+              </ol>
+            </div>
+            <figcaption>List view — same toolbar, denser rows.</figcaption>
+          </figure>
+          <ol class="guide-legend">
+            <li data-mark="1"><span class="guide-n">1</span> Tap the list/grid icon to switch back to photos.</li>
+            <li data-mark="2"><span class="guide-n">2</span> Tap a yarn row to open and edit it.</li>
+          </ol>
+        </div>
+
+        <h3 class="guide-print-break">Sort</h3>
+        <div class="guide-howto">
+          <figure class="guide-shot">
+            <div class="guide-phone">
+              <img src="../images/user-guide/filters-sort.png?v=guide-9" alt="Sort By dialog over the stash list" width="1080" height="2404" loading="lazy">
+              <ol class="guide-pins">
+                <li class="guide-pin guide-pin--above" style="--x:63.4%; --y:16.7%; --rw:20.5%; --rh:4.0%; --rr:999px;" data-mark="1" tabindex="0" role="button" aria-label="Step 1: Open sort"><span class="guide-pin-n">1</span></li>
+                <li class="guide-pin guide-pin--left" style="--x:50%; --y:50.7%; --rw:51.8%; --rh:24.1%; --rr:16px;" data-mark="2" tabindex="0" role="button" aria-label="Step 2: Choose a sort"><span class="guide-pin-n">2</span></li>
+                <li class="guide-pin guide-pin--below" style="--x:70.5%; --y:66.4%; --rw:14.3%; --rh:4.8%; --rr:8px;" data-mark="3" tabindex="0" role="button" aria-label="Step 3: Close"><span class="guide-pin-n">3</span></li>
+              </ol>
+            </div>
+            <figcaption>Sort By dialog.</figcaption>
+          </figure>
+          <ol class="guide-legend">
+            <li data-mark="1"><span class="guide-n">1</span> Tap <span class="guide-tap">Brand</span> (or the current sort name) to open this dialog.</li>
+            <li data-mark="2"><span class="guide-n">2</span> Tap a sort: Name, Colorway, Brand, Total Length, Weight, or Date Updated.</li>
+            <li data-mark="3"><span class="guide-n">3</span> Tap <span class="guide-tap">Close</span> without changing, or pick a sort to apply and dismiss.</li>
+          </ol>
+        </div>
+
+        <h3 class="guide-print-break">Filters &amp; search</h3>
+        <div class="guide-howto">
+          <figure class="guide-shot">
+            <div class="guide-phone">
+              <img src="../images/user-guide/filters.png?v=guide-9" alt="Open Filters panel with search and facet chips" width="1080" height="2404" loading="lazy">
+              <ol class="guide-pins">
+                <li class="guide-pin guide-pin--above" style="--x:17.5%; --y:16.7%; --rw:20.6%; --rh:4.0%; --rr:999px;" data-mark="1" tabindex="0" role="button" aria-label="Step 1: Filters"><span class="guide-pin-n">1</span></li>
+                <li class="guide-pin guide-pin--below" style="--x:50.0%; --y:23.3%; --rw:89.3%; --rh:5.6%; --rr:999px;" data-mark="2" tabindex="0" role="button" aria-label="Step 2: Search"><span class="guide-pin-n">2</span></li>
+                <li class="guide-pin guide-pin--below" style="--x:18%; --y:47.8%; --rw:22%; --rh:3.6%; --rr:999px;" data-mark="3" tabindex="0" role="button" aria-label="Step 3: Fiber chips"><span class="guide-pin-n">3</span></li>
+              </ol>
+            </div>
+            <figcaption>Filters panel open on stash.</figcaption>
+          </figure>
+          <ol class="guide-legend">
+            <li data-mark="1"><span class="guide-n">1</span> Tap <span class="guide-tap">Filters</span> to show or hide this panel (highlighted when open).</li>
+            <li data-mark="2"><span class="guide-n">2</span> Type in <span class="guide-tap">Search your stash…</span> — matches brand, name, colorway, color, dye lot, and notes.</li>
+            <li data-mark="3"><span class="guide-n">3</span> Tap chips for groups, brands, fibers, weights, and colors. Fiber <span class="guide-tap">OR</span> / <span class="guide-tap">AND</span> changes how multiple fibers combine. Handspun and Length &amp; Weight are further down the same panel.</li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="add-edit-yarn" class="guide-section">
+        <h2><span class="guide-secnum">4</span> Add, edit &amp; delete yarn</h2>
+        <div class="guide-howto">
+          <figure class="guide-shot">
+            <div class="guide-phone">
+              <img src="../images/user-guide/add-yarn.png?v=guide-9" alt="Add Yarn form with photos, Smart Scan, and save button" width="1080" height="2404" loading="lazy">
+              <ol class="guide-pins">
+                <li class="guide-pin guide-pin--left" style="--x:28.6%; --y:27.1%; --rw:41.1%; --rh:18.4%; --rr:14px;" data-mark="1" tabindex="0" role="button" aria-label="Step 1: Add photo"><span class="guide-pin-n">1</span></li>
+                <li class="guide-pin guide-pin--below" style="--x:43.8%; --y:42.7%; --rw:80.4%; --rh:5.6%; --rr:999px;" data-mark="2" tabindex="0" role="button" aria-label="Step 2: Smart Scan"><span class="guide-pin-n">2</span></li>
+                <li class="guide-pin guide-pin--left" style="--x:50.0%; --y:91.6%; --rw:29.6%; --rh:5.6%; --rr:999px;" data-mark="3" tabindex="0" role="button" aria-label="Step 3: Save yarn"><span class="guide-pin-n">3</span></li>
+                <li class="guide-pin guide-pin--below" style="--x:6.3%; --y:7.9%; --rw:5.4%; --rh:2.4%; --rr:10px;" data-mark="4" tabindex="0" role="button" aria-label="Step 4: Back"><span class="guide-pin-n">4</span></li>
+              </ol>
+            </div>
+            <figcaption>Add Yarn — photos, Smart Scan, and save.</figcaption>
+          </figure>
+          <ol class="guide-legend">
+            <li data-mark="1"><span class="guide-n">1</span> Tap the camera tile to add photos (camera or gallery). Up to 4. Trash icons remove a photo.</li>
+            <li data-mark="2"><span class="guide-n">2</span> <span class="guide-tap">Smart Scan</span> stays disabled until you add a photo. After that it needs credits and internet.</li>
+            <li data-mark="3"><span class="guide-n">3</span> Tap <span class="guide-tap">Add Yarn</span> (disk) to save. The same button reads as save when you are editing.</li>
+            <li data-mark="4"><span class="guide-n">4</span> Tap back if you need to leave. Unsaved changes ask you to discard or stay.</li>
+          </ol>
+        </div>
+        <h3>Edit</h3>
+        <p>Tap a yarn on the stash to open <strong>Edit Yarn</strong>, change fields, then tap the save button.</p>
+        <h3>Possible duplicate</h3>
+        <p>If a new yarn looks like one you already have, choose Cancel, add skeins to the match, or save as new.</p>
+        <h3>Delete</h3>
+        <p>On Edit Yarn, use delete in the app bar. Or long-press on the stash list and use <span class="guide-tap">Delete</span> (see <a href="#selection-batch">Selection</a>).</p>
+        <h3>Another colorway</h3>
+        <p>In Basic Info, tap <span class="guide-tap">Add Another Colorway</span> when you have the same yarn in a different color. Yarn Stasher copies the rest of the entry (brand, name, weight, fibers, and so on). Photos, colorway, and amount start empty so you can fill those in for the new color.</p>
+      </section>
+
+      <section id="photos-smart-scan" class="guide-section">
+        <h2><span class="guide-secnum">5</span> Photos &amp; Smart Scan</h2>
+        <p>Smart Scan is how Yarn Stasher reads yarn-label photos and fills in the form. You can attach up to 4 photos; one scan still uses <strong>one credit</strong>, even if several photos are attached. The more label data that is visible (brand, colorway, weight, fiber, yardage), the better the fill. Keep labels in frame, well lit, and in focus.</p>
+        <div class="guide-howto">
+          <figure class="guide-shot">
+            <div class="guide-phone">
+              <img src="../images/user-guide/smart-scan-empty.png?v=guide-9" alt="Yarn form after Smart Scan, with reasoning card and save button" width="1080" height="2404" loading="lazy">
+              <ol class="guide-pins">
+                <li class="guide-pin guide-pin--below" style="--x:43.8%; --y:14.4%; --rw:80.4%; --rh:5.6%; --rr:999px;" data-mark="1" tabindex="0" role="button" aria-label="Step 1: Smart Scan"><span class="guide-pin-n">1</span></li>
+                <li class="guide-pin guide-pin--left" style="--x:50.0%; --y:91.6%; --rw:37.4%; --rh:5.6%; --rr:999px;" data-mark="2" tabindex="0" role="button" aria-label="Step 2: Save yarn"><span class="guide-pin-n">2</span></li>
+              </ol>
+            </div>
+            <figcaption>After a scan — review the filled fields, then save.</figcaption>
+          </figure>
+          <ol class="guide-legend">
+            <li data-mark="1"><span class="guide-n">1</span> On Add Yarn, add up to 4 photos, then tap <span class="guide-tap">Smart Scan</span>. That uses <strong>one credit</strong> (not one per photo) and needs internet. The app fills brand, name, colorway, yarn weight, fibers, and yardage. Open <span class="guide-tap">View analysis details</span> if you want to see how it read the photos.</li>
+            <li data-mark="2"><span class="guide-n">2</span> Always check the fields — scans can misread a label. Fix anything wrong, then tap <span class="guide-tap">Save Changes</span> (or <span class="guide-tap">Add Yarn</span> on a new entry).</li>
+          </ol>
+        </div>
+        <aside class="guide-callout">
+          The first time you add yarn, a short Smart Scan tip may appear — tap <span class="guide-tap">Got it!</span>. A promo banner on stash can be dismissed with the close control.
+        </aside>
+      </section>
+
+      <section id="yarn-fields" class="guide-section">
+        <h2><span class="guide-secnum">6</span> Yarn fields</h2>
+        <p>Each yarn has Basic Info, measurements, fibers, groups, and extra notes. Some Basic Info fields lock when the yarn is linked to the Ravelry database.</p>
+        <div class="guide-howto">
+          <figure class="guide-shot">
+            <div class="guide-phone">
+              <img src="../images/user-guide/yarn-fields.png?v=guide-9" alt="Yarn form Basic Info and measurement fields" width="1080" height="2404" loading="lazy">
+              <ol class="guide-pins">
+                <li class="guide-pin guide-pin--right" style="--x:50%; --y:42%; --rw:86%; --rh:52%; --rr:14px;" data-mark="1" tabindex="0" role="button" aria-label="Step 1: Basic Info"><span class="guide-pin-n">1</span></li>
+                <li class="guide-pin guide-pin--right" style="--x:50%; --y:84%; --rw:86%; --rh:26%; --rr:14px;" data-mark="2" tabindex="0" role="button" aria-label="Step 2: Measurements"><span class="guide-pin-n">2</span></li>
+              </ol>
+            </div>
+            <figcaption>Basic Info and measurements on the yarn form.</figcaption>
+          </figure>
+          <ol class="guide-legend">
+            <li data-mark="1"><span class="guide-n">1</span> Brand, name, colorway, yarn weight, and closest color. <span class="guide-tap">Add Another Colorway</span> copies this yarn except photos, colorway, and amount (see <a href="#add-edit-yarn">Add yarn</a>).</li>
+            <li data-mark="2"><span class="guide-n">2</span> Skein count, length per skein, and weight per skein. Totals update as you type. Units follow Settings (meters/yards, grams/ounces).</li>
+          </ol>
+        </div>
+        <h3>Measurements &amp; calculator</h3>
+        <p>Skein count, length per skein, and weight per skein (meters/yards, grams/ounces). Totals update as you type.</p>
+        <div class="guide-howto">
+          <figure class="guide-shot">
+            <div class="guide-phone">
+              <img src="../images/user-guide/yarn-calculator.png?v=guide-9" alt="Skein Count Calculator sheet with Subtract, Add, and Remaining" width="1080" height="2404" loading="lazy">
+              <ol class="guide-pins">
+                <li class="guide-pin guide-pin--above" style="--x:21.5%; --y:42.9%; --rw:22%; --rh:5.2%; --rr:999px;" data-mark="1" tabindex="0" role="button" aria-label="Step 1: Subtract"><span class="guide-pin-n">1</span></li>
+                <li class="guide-pin guide-pin--above" style="--x:52.5%; --y:42.9%; --rw:18%; --rh:5.2%; --rr:999px;" data-mark="2" tabindex="0" role="button" aria-label="Step 2: Add"><span class="guide-pin-n">2</span></li>
+                <li class="guide-pin guide-pin--above" style="--x:83.4%; --y:42.9%; --rw:22%; --rh:5.2%; --rr:999px;" data-mark="3" tabindex="0" role="button" aria-label="Step 3: Remaining"><span class="guide-pin-n">3</span></li>
+              </ol>
+            </div>
+            <figcaption>Skein Count Calculator — add, remove, or set count from what is left.</figcaption>
+          </figure>
+          <ol class="guide-legend">
+            <li data-mark="1"><span class="guide-n">1</span> <span class="guide-tap">Subtract</span> — enter skeins (or length/weight) you used.</li>
+            <li data-mark="2"><span class="guide-n">2</span> <span class="guide-tap">Add</span> — enter skeins you bought.</li>
+            <li data-mark="3"><span class="guide-n">3</span> <span class="guide-tap">Remaining</span> — enter how much yarn is left; Yarn Stasher estimates the new skein count.</li>
+          </ol>
+        </div>
+        <p>Open it from the yarn form: scroll to Measurements and tap <span class="guide-tap">Skein Count Calculator</span>.</p>
+        <h3>Fibers, groups, extra</h3>
+        <ul>
+          <li><strong>Fibers</strong> — name + percentage rows; stash names autocomplete</li>
+          <li><strong>Groups</strong> — name a project, bin, or season; groups also appear as filter chips</li>
+          <li><strong>Extra</strong> — dye lot, needle size, gauge, notes, hand spun</li>
+        </ul>
+        <p>Per-yarn Ravelry catalog linking is on the yarn form. See <a href="#ravelry-database">Ravelry yarn database</a>.</p>
+      </section>
+
+      <section id="selection-batch" class="guide-section">
+        <h2><span class="guide-secnum">7</span> Selection &amp; groups</h2>
+        <div class="guide-howto">
+          <figure class="guide-shot">
+            <div class="guide-phone">
+              <img src="../images/user-guide/selection-grid.png?v=guide-9" alt="Stash grid in selection mode with checkboxes, Delete, and Cancel" width="1080" height="2404" loading="lazy">
+              <ol class="guide-pins">
+                <li class="guide-pin guide-pin--left" style="--x:27.7%; --y:22.2%; --rw:41%; --rh:23%; --rr:16px;" data-mark="1" tabindex="0" role="button" aria-label="Step 1: Selected yarn"><span class="guide-pin-n">1</span></li>
+                <li class="guide-pin guide-pin--above" style="--x:83.5%; --y:88%; --rw:27%; --rh:4.8%; --rr:999px;" data-mark="2" tabindex="0" role="button" aria-label="Step 2: Delete"><span class="guide-pin-n">2</span></li>
+                <li class="guide-pin guide-pin--above" style="--x:17.4%; --y:88%; --rw:22%; --rh:4.8%; --rr:10px;" data-mark="3" tabindex="0" role="button" aria-label="Step 3: Cancel"><span class="guide-pin-n">3</span></li>
+              </ol>
+            </div>
+            <figcaption>Long-press a yarn to select several at once.</figcaption>
+          </figure>
+          <ol class="guide-legend">
+            <li data-mark="1"><span class="guide-n">1</span> Long-press a yarn until checkboxes appear, then tap others to add them.</li>
+            <li data-mark="2"><span class="guide-n">2</span> Tap <span class="guide-tap">Delete</span> (asks for confirmation), or use <span class="guide-tap">Assign group</span> / <span class="guide-tap">Remove group</span>.</li>
+            <li data-mark="3"><span class="guide-n">3</span> Tap <span class="guide-tap">Cancel</span> to leave selection mode.</li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="credits" class="guide-section">
+        <h2><span class="guide-secnum">8</span> Smart Scan credits</h2>
+        <div class="guide-howto">
+          <figure class="guide-shot">
+            <div class="guide-phone">
+              <img src="../images/user-guide/buy-credits.png?v=guide-9" alt="Buy Scan Credits packs" width="1080" height="2404" loading="lazy">
+              <ol class="guide-pins">
+                <li class="guide-pin guide-pin--left" style="--x:27%; --y:51%; --rw:40%; --rh:21%; --rr:16px;" data-mark="1" tabindex="0" role="button" aria-label="Step 1: Choose a pack"><span class="guide-pin-n">1</span></li>
+                <li class="guide-pin guide-pin--below" style="--x:50%; --y:32%; --rw:52%; --rh:3.4%; --rr:8px;" data-mark="2" tabindex="0" role="button" aria-label="Step 2: Restore"><span class="guide-pin-n">2</span></li>
+              </ol>
+            </div>
+            <figcaption>Buy Credits — 10, 50, 200, and 500 scan packs.</figcaption>
+          </figure>
+          <ol class="guide-legend">
+            <li data-mark="1"><span class="guide-n">1</span> Open <span class="guide-tap">☰</span> → <span class="guide-tap">Buy</span>, then tap a pack. Guests may be asked to sign in first.</li>
+            <li data-mark="2"><span class="guide-n">2</span> Use <span class="guide-tap">Restore Purchases</span> after a reinstall or device switch. Buying needs internet.</li>
+          </ol>
+        </div>
+        <p>One Smart Scan uses <strong>one credit</strong>, even if you attached up to 4 photos. Credits are not used when you add photos or save a yarn by hand.</p>
+        <h3>Bonus credits</h3>
+        <ul>
+          <li><strong>New device:</strong> Yarn Stasher automatically adds 3 Smart Scan credits once per device, whether you start as a guest or sign in. Reopening the app does not grant them again.</li>
+          <li><strong>Email verification:</strong> An email/password account can claim 10 credits once after verifying its email. In Settings, complete email verification and tap the check/claim action.</li>
+          <li><strong>Guest transfer:</strong> If you later sign in, the transfer prompt can move any remaining guest credits on that device into your account.</li>
+        </ul>
+      </section>
+
+      <section id="sync-backup" class="guide-section">
+        <h2><span class="guide-secnum">9</span> Sync &amp; backup</h2>
+        <p>Yarn always stays on this device. Where else it is copied depends on how you signed in:</p>
+        <ul>
+          <li><strong>Ravelry linked</strong> (guest or Yarn Stasher account) — stash syncs only with Ravelry. Yarn Stasher cloud is not used.</li>
+          <li><strong>Signed in, no Ravelry</strong> — stash backs up to Yarn Stasher’s cloud.</li>
+          <li><strong>Guest, no Ravelry</strong> — local only; nothing is backed up off the device.</li>
+        </ul>
+        <p>Tap the cloud icon on stash, pull down to refresh, or open Settings and tap <span class="guide-tap">Sync Stash Now</span>.</p>
+      </section>
+
+      <section id="ravelry" class="guide-section">
+        <h2><span class="guide-secnum">10</span> Ravelry</h2>
+        <div class="guide-howto">
+          <figure class="guide-shot">
+            <div class="guide-phone">
+              <img src="../images/user-guide/sync-ravelry.png?v=guide-9" alt="Settings Ravelry Integration card with Sync Now and Unlink" width="1080" height="2404" loading="lazy">
+              <ol class="guide-pins">
+                <li class="guide-pin guide-pin--above" style="--x:28.1%; --y:50.4%; --rw:36%; --rh:4.8%; --rr:12px;" data-mark="1" tabindex="0" role="button" aria-label="Step 1: Re-auth"><span class="guide-pin-n">1</span></li>
+                <li class="guide-pin guide-pin--above" style="--x:71.9%; --y:50.4%; --rw:36%; --rh:4.8%; --rr:12px;" data-mark="2" tabindex="0" role="button" aria-label="Step 2: Ravelry"><span class="guide-pin-n">2</span></li>
+                <li class="guide-pin guide-pin--below" style="--x:52.9%; --y:56.0%; --rw:36.9%; --rh:2.0%; --rr:8px;" data-mark="3" tabindex="0" role="button" aria-label="Step 3: Unlink Ravelry Account"><span class="guide-pin-n">3</span></li>
+                <li class="guide-pin guide-pin--right" style="--x:50%; --y:78%; --rw:86%; --rh:28%; --rr:16px;" data-mark="4" tabindex="0" role="button" aria-label="Step 4: Theme"><span class="guide-pin-n">4</span></li>
+              </ol>
+            </div>
+            <figcaption>Ravelry card in Settings (account already linked).</figcaption>
+          </figure>
+          <ol class="guide-legend">
+            <li data-mark="1"><span class="guide-n">1</span> Tap <span class="guide-tap">Re-auth</span> if Yarn Stasher needs a fresh Ravelry login.</li>
+            <li data-mark="2"><span class="guide-n">2</span> Tap <span class="guide-tap">Ravelry</span> to open your Ravelry profile in the browser.</li>
+            <li data-mark="3"><span class="guide-n">3</span> Tap <span class="guide-tap">Unlink Ravelry Account</span> to disconnect. To link the first time, tap the Ravelry card, finish browser login, and return to the app.</li>
+            <li data-mark="4"><span class="guide-n">4</span> <strong>Theme</strong> sits below Ravelry — dark toggle, or System / Light / Dark.</li>
+          </ol>
+        </div>
+        <p>If the Ravelry token expires, the app asks you to sign in again. Matching a yarn to Ravelry’s catalog is separate — see <a href="#ravelry-database">Ravelry yarn database</a>.</p>
+      </section>
+
+      <section id="ravelry-database" class="guide-section">
+        <h2><span class="guide-secnum">11</span> Ravelry yarn database</h2>
+        <p>This is not the same as linking your Ravelry <strong>account</strong>. Account linking syncs your stash. Database linking matches <strong>one yarn</strong> to an official Ravelry yarn page so Ravelry treats it as that product and can fill missing details.</p>
+        <div class="guide-howto">
+          <figure class="guide-shot">
+            <div class="guide-phone">
+              <img src="../images/user-guide/add-yarn.png?v=guide-9" alt="Add Yarn form with Link to Ravelry Database card" width="1080" height="2404" loading="lazy">
+              <ol class="guide-pins">
+                <li class="guide-pin guide-pin--right" style="--x:50%; --y:58.8%; --rw:92%; --rh:20%; --rr:14px;" data-mark="1" tabindex="0" role="button" aria-label="Step 1: Link to Database Yarn"><span class="guide-pin-n">1</span></li>
+              </ol>
+            </div>
+            <figcaption>On the yarn form — search Ravelry’s catalog and link this entry.</figcaption>
+          </figure>
+          <ol class="guide-legend">
+            <li data-mark="1"><span class="guide-n">1</span> Tap <span class="guide-tap">Link to Database Yarn</span> (your Ravelry account must already be linked). Yarn Stasher searches Ravelry for yarns with similar brand, name, weight, and other fields. Pick a match to register it in Ravelry’s database and fill any missing catalog info. Brand, name, yarn weight, and fibers then lock because they come from Ravelry. Skip to keep a personal yarn with your own details.</li>
+          </ol>
+        </div>
+        <p>The same search can appear during stash sync for yarns that are not matched yet. On a linked yarn you can <span class="guide-tap">View on Ravelry</span> or <span class="guide-tap">Convert to Personal Yarn</span> to unlock those fields again.</p>
+      </section>
+
+      <section id="settings" class="guide-section">
+        <h2><span class="guide-secnum">12</span> Settings</h2>
+        <p>Open <span class="guide-tap">☰</span>, then tap <span class="guide-tap">Settings</span>. Cloud Sync, Ravelry, and Theme are at the top (see <a href="#ravelry">Ravelry</a>). Scroll for units and help.</p>
+        <div class="guide-howto">
+          <figure class="guide-shot">
+            <div class="guide-phone">
+              <img src="../images/user-guide/settings-units.png?v=guide-9" alt="Settings Units, Help and Legal" width="1080" height="2404" loading="lazy">
+              <ol class="guide-pins">
+                <li class="guide-pin guide-pin--right" style="--x:50%; --y:60%; --rw:88%; --rh:42%; --rr:14px;" data-mark="1" tabindex="0" role="button" aria-label="Step 1: Units"><span class="guide-pin-n">1</span></li>
+                <li class="guide-pin guide-pin--right" style="--x:50%; --y:92%; --rw:88%; --rh:18%; --rr:14px;" data-mark="2" tabindex="0" role="button" aria-label="Step 2: Help and Legal"><span class="guide-pin-n">2</span></li>
+              </ol>
+            </div>
+            <figcaption>Settings — units and Help &amp; Legal (scroll down).</figcaption>
+          </figure>
+          <ol class="guide-legend">
+            <li data-mark="1"><span class="guide-n">1</span> Under <strong>Units</strong>, tap Meters or Yards, and Grams or Ounces.</li>
+            <li data-mark="2"><span class="guide-n">2</span> <strong>Help &amp; Legal</strong> has this user guide, Privacy Policy, Terms, and Contact Support. Account (signed-in) is below.</li>
+          </ol>
+        </div>
+        <p>Email verification lives near the top of Settings — resend or confirm, then claim starter credits when eligible.</p>
+      </section>
+
+      <section id="account" class="guide-section">
+        <h2><span class="guide-secnum">13</span> Account</h2>
+        <div class="guide-howto">
+          <figure class="guide-shot">
+            <div class="guide-phone">
+              <img src="../images/user-guide/account.png?v=guide-9" alt="Account Settings with linked sign-in methods" width="1080" height="2404" loading="lazy">
+              <ol class="guide-pins">
+                <li class="guide-pin guide-pin--right" style="--x:50%; --y:48.6%; --rw:88%; --rh:24%; --rr:12px;" data-mark="1" tabindex="0" role="button" aria-label="Step 1: Linked methods"><span class="guide-pin-n">1</span></li>
+              </ol>
+            </div>
+            <figcaption>Account Settings — password, Google, and Facebook.</figcaption>
+          </figure>
+          <ol class="guide-legend">
+            <li data-mark="1"><span class="guide-n">1</span> Settings → <span class="guide-tap">Linked Accounts</span>: password, Google, Facebook, and Apple (iOS / macOS). Forgot password sends a reset email.</li>
+          </ol>
+        </div>
+        <p>Tap <span class="guide-tap">Sign Out</span> in the menu to return to Sign In.</p>
+        <p>To delete your account: Settings → Account → <span class="guide-tap">Delete account</span>. Re-authenticate, then confirm. This cannot be undone. See <a href="../account-deletion.html">Account Deletion</a>.</p>
+      </section>
+
+      <section id="offline" class="guide-section">
+        <h2><span class="guide-secnum">14</span> Offline</h2>
+        <ul>
+          <li>An offline banner appears on stash, sign-in, settings, buy credits, and account screens.</li>
+          <li>You can still browse and edit the local stash.</li>
+          <li>Sync, Smart Scan, purchases, and most account changes need a connection.</li>
+        </ul>
+      </section>
+
+      <section id="troubleshooting" class="guide-section">
+        <h2><span class="guide-secnum">15</span> Troubleshooting</h2>
+        <dl class="guide-faq">
+          <dt>Smart Scan will not run</dt>
+          <dd>Need a photo, internet, and credits. Verify email for free credits if asked.</dd>
+          <dt>Sync failed</dt>
+          <dd>Confirm you are online. Settings → Sync shows the error. For Ravelry, tap Unlink / link again or re-authenticate.</dd>
+          <dt>Ravelry will not link</dt>
+          <dd>Finish login in the browser and allow the app to reopen. If it does not return, start again from Settings.</dd>
+          <dt>Purchases missing</dt>
+          <dd>Tap <span class="guide-tap">Restore purchases</span> on Buy Credits while online, using the same store account.</dd>
+          <dt>Guest stash missing after sign-in</dt>
+          <dd>If you skipped the transfer dialog, data may still be only on that device. Email support if you need help.</dd>
+          <dt>Filters show zero yarns</dt>
+          <dd>Clear filters or go Back, then search with fewer chips.</dd>
+        </dl>
+      </section>
+
+      <section id="privacy-support" class="guide-section">
+        <h2><span class="guide-secnum">16</span> Privacy &amp; support</h2>
+        <ul class="guide-link-list">
+          <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="../terms.html">Terms of Service</a></li>
+          <li><a href="../eula.html">EULA</a></li>
+          <li>Email: <a href="mailto:support@yarnstasher.com">support@yarnstasher.com</a></li>
+          <li>Website: <a href="../index.html">yarnstasher.com</a></li>
+        </ul>
+        <p>In the app: <span class="guide-tap">☰</span> → About, or Settings → Help &amp; Legal.</p>
+        <div class="guide-howto">
+          <figure class="guide-shot">
+            <div class="guide-phone">
+              <img src="../images/user-guide/about.png?v=guide-9" alt="About Yarn Stasher screen" width="1080" height="2404" loading="lazy">
+            </div>
+            <figcaption>About — version, website, and legal links.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="glossary" class="guide-section">
+        <h2><span class="guide-secnum">17</span> Glossary</h2>
+        <dl class="guide-faq">
+          <dt>Stash</dt>
+          <dd>Your yarn entries in Yarn Stasher.</dd>
+          <dt>Guest mode</dt>
+          <dd>Use the app without a Yarn Stasher account; data is primarily local.</dd>
+          <dt>Smart Scan</dt>
+          <dd>Reads label photos and fills yarn fields; uses scan credits.</dd>
+          <dt>Scan credits</dt>
+          <dd>Balance for Smart Scan; from email verification or in-app packs.</dd>
+          <dt>Groups</dt>
+          <dd>Labels for projects, storage, or any custom set of yarns.</dd>
+          <dt>Cloud sync</dt>
+          <dd>Yarn Stasher cloud backup for signed-in accounts that are not linked to Ravelry. If Ravelry is linked, stash syncs only with Ravelry.</dd>
+          <dt>Ravelry link</dt>
+          <dd>OAuth connection that syncs with your Ravelry stash.</dd>
+          <dt>Database-linked yarn</dt>
+          <dd>A stash entry matched to an official Ravelry yarn page. Catalog fields can fill in and then lock; convert to personal to unlock them.</dd>
+          <dt>Colorway</dt>
+          <dd>Named color or dye of a yarn.</dd>
+          <dt>Closest color</dt>
+          <dd>Simple color category for browsing and filters.</dd>
+        </dl>
+        <h3 class="guide-index-heading">Index</h3>
+        <ul class="guide-index">
+          <li><a href="#add-edit-yarn">Add yarn</a></li>
+          <li><a href="#account">Apple / Google / Facebook</a></li>
+          <li><a href="#yarn-fields">Calculator</a></li>
+          <li><a href="#getting-started">Sign in</a></li>
+          <li><a href="#account">Delete account</a></li>
+          <li><a href="#browse-organize">Filters</a></li>
+          <li><a href="#getting-started">Guest mode</a></li>
+          <li><a href="#yarn-fields">Groups</a></li>
+          <li><a href="#browse-organize">Grid / list</a></li>
+          <li><a href="#offline">Offline</a></li>
+          <li><a href="#photos-smart-scan">Photos</a></li>
+          <li><a href="#ravelry">Ravelry</a></li>
+          <li><a href="#ravelry-database">Ravelry yarn database</a></li>
+          <li><a href="#selection-batch">Selection</a></li>
+          <li><a href="#settings">Settings</a></li>
+          <li><a href="#photos-smart-scan">Smart Scan</a></li>
+          <li><a href="#browse-organize">Sort</a></li>
+          <li><a href="#sync-backup">Sync</a></li>
+          <li><a href="#settings">Theme &amp; units</a></li>
+        </ul>
+      </section>
+
+    </article>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <nav>
+        <a href="index.html">User Guide</a>
+        <a href="../privacy-policy.html">Privacy Policy</a>
+        <a href="../terms.html">Terms</a>
+        <a href="../eula.html">EULA</a>
+        <a href="../account-deletion.html">Account Deletion</a>
+      </nav>
+    </div>
+    <p class="copyright">© 2025 Yarn Stasher – All Rights Reserved</p>
+  </footer>
+  <script src="../script.js?v=guide-2"></script>
+</body>
+</html>
