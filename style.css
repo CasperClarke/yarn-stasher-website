@@ -385,6 +385,56 @@ section p {
   margin-bottom: 0;
 }
 
+.video-frame {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 1rem auto 0;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.video-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 700px) {
+  .highlights-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.highlight {
+  padding: 1.1rem 1.25rem;
+  background: rgba(40, 40, 40, 0.7);
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+
+.highlight h3 {
+  margin: 0 0 0.45rem;
+}
+
+.highlight p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 0.97rem;
+}
+
 .coming-soon-known-bugs {
   margin-top: 1.5rem;
   padding: 1.25rem 1.5rem;
@@ -513,7 +563,8 @@ section p {
 
 .gallery-item img {
   width: 100%;
-  aspect-ratio: 9 / 19.5;
+  aspect-ratio: 9 / 16;
+  height: auto;
   object-fit: contain;
   display: block;
 }
