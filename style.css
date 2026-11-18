@@ -645,6 +645,8 @@ section p {
 .lightbox.open {
   opacity: 1;
   visibility: visible;
+  /* become visible at once so the close button can take focus */
+  transition: opacity 0.25s, visibility 0s;
 }
 
 .lightbox-img {
@@ -1592,3 +1594,295 @@ footer {
     padding: 2rem 1rem;
   }
 }
+
+/* ---- Site refresh (home page layout, nav CTA, news, a11y) ---- */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 88px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -100px;
+  z-index: 200;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 0.75rem;
+}
+
+.nav-links a[aria-current="page"] {
+  color: var(--accent-light);
+}
+
+.nav-links a.nav-cta {
+  padding: 0.45rem 0.95rem;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+}
+
+.nav-links a.nav-cta:hover {
+  background: var(--accent-dark);
+  color: #fff;
+}
+
+@media (min-width: 901px) {
+  .nav-links {
+    align-items: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .nav-links a.nav-cta {
+    text-align: center;
+    margin-top: 0.25rem;
+  }
+}
+
+/* Hero: text and badges beside the image on wide screens, CTA above the image on phones */
+.hero .tagline {
+  margin-bottom: 0;
+}
+
+.hero .download-cta {
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 860px) {
+  .hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+    align-items: center;
+    gap: 2.5rem;
+    text-align: left;
+    padding: 3rem 3rem;
+  }
+
+  .hero h1,
+  .hero .tagline {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .hero h1 {
+    max-width: none;
+    font-size: clamp(2rem, 3.4vw, 2.6rem);
+  }
+
+  .hero .download-cta {
+    align-items: flex-start;
+  }
+
+  .hero .app-badges {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: -10px;
+  }
+
+  .hero .app-badge {
+    width: 170px;
+    height: 54px;
+  }
+
+  .hero-image-wrapper {
+    margin: 0;
+    max-width: none;
+  }
+}
+
+/* Gallery items are buttons so they work with the keyboard */
+button.gallery-item {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  color: inherit;
+}
+
+button.gallery-item:focus-visible,
+.gallery-carousel:focus-visible {
+  outline: 2px solid rgba(206, 147, 216, 0.95);
+  outline-offset: 2px;
+}
+
+/* What's new / what's next */
+.news-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 760px) {
+  .news-grid {
+    grid-template-columns: 1.3fr 1fr;
+  }
+}
+
+.news-card {
+  padding: 1.15rem 1.35rem;
+  background: rgba(40, 40, 40, 0.7);
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+
+.news-card h3 {
+  margin: 0 0 0.4rem;
+}
+
+.coming-soon .news-sub {
+  margin: 0.5rem 0 0;
+  font-size: 0.95rem;
+}
+
+.news-list {
+  margin: 0.5rem 0 0;
+  padding-left: 1.15rem;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.news-list li {
+  margin-bottom: 0.35rem;
+}
+
+.news-list li::marker {
+  color: var(--accent-light);
+}
+
+.coming-soon a,
+.contact a {
+  color: var(--accent-light);
+}
+
+.footer-content nav a[aria-current="page"] {
+  color: var(--accent-light);
+}
+
+.not-found {
+  text-align: center;
+}
+
+.not-found p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.not-found .cta {
+  margin: 0.75rem 0;
+}
+
+.not-found a:not(.cta) {
+  color: var(--accent-light);
+}
+
+/* Hero visual: real app screens in phone frames, with Smart Scan call-outs */
+.hero-visual {
+  position: relative;
+  width: min(100%, 360px);
+  margin: 2rem auto 0.5rem;
+  padding-right: 18%;
+}
+
+.hero-phone {
+  background: #0b0b0d;
+  padding: 7px;
+  border-radius: 30px;
+  box-shadow: 0 0 0 2px #3a3340, 0 24px 50px rgba(0, 0, 0, 0.55), 0 0 60px rgba(206, 147, 216, 0.18);
+}
+
+.hero-phone img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+  background: #f4f0f6;
+}
+
+.hero-phone--main {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-phone--scan {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  bottom: -4%;
+  width: 46%;
+  padding: 5px;
+  border-radius: 22px;
+  transform: rotate(4deg);
+}
+
+.hero-phone--scan img {
+  border-radius: 18px;
+}
+
+.hero-chips {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.chip {
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.7rem 0.3rem 0.4rem;
+  border-radius: 999px;
+  background: #fff;
+  color: #3b1650;
+  font-size: 0.78rem;
+  font-weight: 700;
+  white-space: nowrap;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.4);
+}
+
+.chip::before {
+  content: "✓";
+  display: grid;
+  place-items: center;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 0.7rem;
+}
+
+.chip--brand { left: -6%; top: 46%; }
+.chip--brand::before { background: #e8590c; }
+.chip--color { right: -4%; top: 38%; }
+.chip--color::before { background: #1098ad; }
+.chip--weight { left: -2%; top: 62%; }
+.chip--weight::before { background: #ab47bc; }
+.chip--yards { right: -6%; top: 76%; }
+.chip--yards::before { background: #d4a10b; }
+
+@media (min-width: 860px) {
+  .hero-visual {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 340px;
+  }
+}
+

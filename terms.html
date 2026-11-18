@@ -4,33 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="canonical" href="https://yarnstasher.com/terms.html">
+  <meta name="description" content="Terms of Service for the Yarn Stasher app and website.">
   <title>Terms of Service – Yarn Stasher</title>
-  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/logo-96.png">
+  <link rel="apple-touch-icon" href="images/logo-180.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=site-7">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header>
-    <nav>
+    <nav aria-label="Main">
       <a href="index.html" class="logo">
-        <img src="images/logo.png" alt="Yarn Stasher">
+        <img src="images/logo-96.webp" alt="" width="40" height="40">
         <span>Yarn Stasher</span>
       </a>
       <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav-links">☰</button>
       <ul class="nav-links" id="main-nav-links">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#highlights">Features</a></li>
         <li><a href="user-guide/">User Guide</a></li>
-        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-        <li><a href="terms.html">Terms</a></li>
-        <li><a href="eula.html">EULA</a></li>
-        <li><a href="account-deletion.html">Account Deletion</a></li>
+        <li><a href="index.html#contact">Support</a></li>
+        <li><a href="index.html#download" class="nav-cta">Get the app</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
+  <main id="main">
     <h1>Terms of Service</h1>
     <p class="muted">Last updated: March 2025</p>
     <div class="legal-content">
@@ -43,15 +44,18 @@
   </main>
 
   <footer>
-    <p>© 2025 Yarn Stasher – All Rights Reserved</p>
-    <nav>
-      <a href="user-guide/">User Guide</a>
-      <a href="privacy-policy.html">Privacy Policy</a>
-      <a href="terms.html">Terms</a>
-      <a href="eula.html">EULA</a>
-      <a href="account-deletion.html">Account Deletion</a>
-    </nav>
+    <div class="footer-content">
+      <nav aria-label="Footer">
+        <a href="user-guide/">User Guide</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms.html" aria-current="page">Terms</a>
+        <a href="eula.html">EULA</a>
+        <a href="account-deletion.html">Account Deletion</a>
+        <a href="mailto:support@yarnstasher.com">Contact</a>
+      </nav>
+    </div>
+    <p class="copyright">© 2025–2026 ThreadSafe LLC · Yarn Stasher – All Rights Reserved</p>
   </footer>
-  <script src="script.js"></script>
+  <script src="script.js?v=site-7"></script>
 </body>
 </html>

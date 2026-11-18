@@ -5,20 +5,25 @@ document.addEventListener('DOMContentLoaded', () => {
   const lightboxClose = lightbox?.querySelector('.lightbox-close');
   const galleryItems = document.querySelectorAll('.gallery-item');
 
+  let lastFocused = null;
+
   const openLightbox = (img) => {
     if (!lightbox || !lightboxImg) return;
+    lastFocused = document.activeElement;
     lightboxImg.src = img.src;
     lightboxImg.alt = img.alt;
     lightbox.setAttribute('aria-hidden', 'false');
     lightbox.classList.add('open');
     document.body.style.overflow = 'hidden';
+    lightboxClose?.focus();
   };
 
   const closeLightbox = () => {
-    if (!lightbox) return;
+    if (!lightbox || !lightbox.classList.contains('open')) return;
     lightbox.classList.remove('open');
     lightbox.setAttribute('aria-hidden', 'true');
     document.body.style.overflow = '';
+    lastFocused?.focus?.();
   };
 
   if (lightbox && lightboxImg) {

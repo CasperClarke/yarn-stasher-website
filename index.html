@@ -3,66 +3,106 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yarn Stasher – Scan Yarn Labels and Organize Your Stash</title>
   <link rel="canonical" href="https://yarnstasher.com/">
-  <meta name="description" content="Yarn Stasher uses AI to help you inventory all of your yarn. Take a picture of your yarn labels and automatically extract brand, color, weight, and more.">
-  
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="Yarn Stasher – AI-Powered Yarn Inventory">
-  <meta property="og:description" content="Yarn Stasher uses AI to help you inventory all of your yarn. Take a picture of your yarn labels and automatically extract brand, color, weight, and more.">
-  <meta property="og:image" content="https://yarnstasher.com/images/stash-hero.png">
+  <meta name="description" content="Yarn Stasher is a free yarn inventory app for iPhone and Android. Snap a photo of a yarn label and Smart Scan fills in brand, colorway, weight, fiber and yardage. Works offline and syncs with Ravelry.">
+  <meta name="theme-color" content="#0f0f0f">
+  <meta name="apple-itunes-app" content="app-id=6754806168">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Yarn Stasher">
+  <meta property="og:title" content="Yarn Stasher – Scan Yarn Labels and Organize Your Stash">
+  <meta property="og:description" content="Snap a photo of a yarn label and Smart Scan fills in the details. Free to organize, works offline, syncs with Ravelry.">
+  <meta property="og:image" content="https://yarnstasher.com/images/og-image.jpg">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="500">
+  <meta property="og:image:alt" content="Yarn Stasher app showing an organized yarn stash">
   <meta property="og:url" content="https://yarnstasher.com/">
   <meta property="og:type" content="website">
 
-  <!-- Twitter Meta Tags -->
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Yarn Stasher – AI-Powered Yarn Inventory">
-  <meta name="twitter:description" content="Yarn Stasher uses AI to help you inventory all of your yarn. Take a picture of your yarn labels and automatically extract brand, color, weight, and more.">
-  <meta name="twitter:image" content="https://yarnstasher.com/images/stash-hero.png">
+  <meta name="twitter:title" content="Yarn Stasher – Scan Yarn Labels and Organize Your Stash">
+  <meta name="twitter:description" content="Snap a photo of a yarn label and Smart Scan fills in the details. Free to organize, works offline, syncs with Ravelry.">
+  <meta name="twitter:image" content="https://yarnstasher.com/images/og-image.jpg">
 
-  <title>Yarn Stasher – AI-Powered Yarn Inventory</title>
-  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/logo-96.png">
+  <link rel="apple-touch-icon" href="images/logo-180.png">
+  <link rel="preload" as="image" href="images/hero/stash-grid.webp" type="image/webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=site-7">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Yarn Stasher",
+    "url": "https://yarnstasher.com/",
+    "image": "https://yarnstasher.com/images/logo-180.png",
+    "description": "Yarn inventory app. Snap a photo of a yarn label and Smart Scan fills in brand, colorway, weight, fiber and yardage. Works offline and syncs with Ravelry.",
+    "applicationCategory": "LifestyleApplication",
+    "operatingSystem": "iOS, Android",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "sameAs": [
+      "https://apps.apple.com/us/app/yarn-stasher/id6754806168",
+      "https://play.google.com/store/apps/details?id=com.YarnStasher.YarnStasher"
+    ],
+    "publisher": { "@type": "Organization", "name": "ThreadSafe LLC", "email": "support@yarnstasher.com" }
+  }
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header>
-    <nav>
+    <nav aria-label="Main">
       <a href="index.html" class="logo">
-        <img src="images/logo.png" alt="Yarn Stasher">
+        <img src="images/logo-96.webp" alt="" width="40" height="40">
         <span>Yarn Stasher</span>
       </a>
       <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav-links">☰</button>
       <ul class="nav-links" id="main-nav-links">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="#highlights">Features</a></li>
+        <li><a href="#gallery">Screenshots</a></li>
         <li><a href="user-guide/">User Guide</a></li>
-        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-        <li><a href="terms.html">Terms</a></li>
-        <li><a href="eula.html">EULA</a></li>
-        <li><a href="account-deletion.html">Account Deletion</a></li>
+        <li><a href="#contact">Support</a></li>
+        <li><a href="#download" class="nav-cta">Get the app</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <h1>Do you know how much yarn you have?<br><span class="hero-answer">Yarn Stasher does!</span></h1>
-      <p class="tagline">Snap a photo of your yarn labels—AI extracts brand, color, weight &amp; more. No typing required.</p>
-      <div class="hero-image-wrapper">
-        <img src="images/stash-hero.png" alt="Yarn stash organized with Yarn Stasher" class="hero-image" width="800" height="400" loading="eager">
+  <main id="main">
+    <section class="hero" id="download">
+      <div class="hero-copy">
+        <h1>Do you know how much yarn you have?<span class="hero-answer">Yarn Stasher does!</span></h1>
+        <p class="tagline">Snap a photo of your yarn labels. Smart Scan fills in brand, colorway, weight, fiber &amp; yardage. No typing required.</p>
+        <div class="download-cta">
+          <span class="download-free">Free on iPhone &amp; Android</span>
+          <span class="download-sub">No subscription. Organize your stash in minutes.</span>
+        </div>
+        <div class="app-badges">
+          <a href="https://apps.apple.com/us/app/yarn-stasher/id6754806168" class="app-badge app-badge--apple" aria-label="Download Yarn Stasher on the App Store">
+            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" width="160" height="53">
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.YarnStasher.YarnStasher" class="app-badge app-badge--google-play" aria-label="Get Yarn Stasher on Google Play">
+            <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" width="190" height="74">
+          </a>
+        </div>
       </div>
-      <div class="download-cta">
-        <span class="download-free">Download free</span>
-        <span class="download-sub">Organize your stash in minutes</span>
-      </div>
-      <div class="app-badges">
-        <a href="https://apps.apple.com/us/app/yarn-stasher/id6754806168" class="app-badge app-badge--apple" aria-label="Download on the App Store">
-          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
-        </a>
-        <a href="https://play.google.com/store/apps/details?id=com.YarnStasher.YarnStasher" class="app-badge app-badge--google-play" aria-label="Get it on Google Play">
-          <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play">
-        </a>
+      <div class="hero-visual">
+        <div class="hero-phone hero-phone--main">
+          <img src="images/hero/stash-grid.webp" alt="The Yarn Stasher stash screen: a grid of yarn photos, each showing brand, colorway, length and weight" width="640" height="1425" fetchpriority="high">
+        </div>
+        <div class="hero-phone hero-phone--scan">
+          <img src="images/hero/scan-filled.webp" alt="The Add Yarn form after Smart Scan, with brand, name, colorway, weight and yardage filled in" width="480" height="1068" loading="lazy">
+        </div>
+        <ul class="hero-chips" aria-label="Smart Scan fills in">
+          <li class="chip chip--brand">Brand</li>
+          <li class="chip chip--color">Colorway</li>
+          <li class="chip chip--weight">Weight</li>
+          <li class="chip chip--yards">Yardage</li>
+        </ul>
       </div>
     </section>
 
@@ -95,72 +135,81 @@
       </div>
     </section>
 
-    <section class="gallery" id="gallery">
-      <h2>In App Photo Gallery</h2>
-      <p class="gallery-intro">See Yarn Stasher in action</p>
+    <section class="gallery" id="gallery" aria-labelledby="gallery-title">
+      <h2 id="gallery-title">A look inside the app</h2>
+      <p class="gallery-intro">Tap a screenshot to see it full size.</p>
       <div class="gallery-carousel-wrapper">
-        <button class="carousel-scroll-btn prev" aria-label="Scroll left">‹</button>
-        <div class="gallery-carousel">
-          <div class="gallery-item"><img src="images/gallery/screen-1.webp" alt="Snap the label. Skip the typing: Smart Scan fills in the yarn details" width="1080" height="1920" loading="lazy"></div>
-          <div class="gallery-item"><img src="images/gallery/screen-2.webp" alt="Your whole stash in your pocket" width="1080" height="1920" loading="lazy"></div>
-          <div class="gallery-item"><img src="images/gallery/screen-3.webp" alt="Already own it? Find out fast with search and filters" width="1080" height="1920" loading="lazy"></div>
-          <div class="gallery-item"><img src="images/gallery/screen-4.webp" alt="Works with Ravelry" width="1080" height="1920" loading="lazy"></div>
-          <div class="gallery-item"><img src="images/gallery/screen-5.webp" alt="Know exactly what is left with the skein calculator" width="1080" height="1920" loading="lazy"></div>
-          <div class="gallery-item"><img src="images/gallery/screen-6.webp" alt="Sort it your way" width="1080" height="1920" loading="lazy"></div>
-          <div class="gallery-item"><img src="images/gallery/screen-7.webp" alt="Free to organize. No subscription." width="1080" height="1920" loading="lazy"></div>
+        <button class="carousel-scroll-btn prev" aria-label="Previous screenshots">‹</button>
+        <div class="gallery-carousel" tabindex="0" aria-label="App screenshots">
+          <button type="button" class="gallery-item"><img src="images/gallery/screen-1.webp" alt="Snap the label. Skip the typing: Smart Scan fills in the yarn details" width="1080" height="1920" loading="lazy"></button>
+          <button type="button" class="gallery-item"><img src="images/gallery/screen-2.webp" alt="Your whole stash in your pocket" width="1080" height="1920" loading="lazy"></button>
+          <button type="button" class="gallery-item"><img src="images/gallery/screen-3.webp" alt="Already own it? Find out fast with search and filters" width="1080" height="1920" loading="lazy"></button>
+          <button type="button" class="gallery-item"><img src="images/gallery/screen-4.webp" alt="Works with Ravelry" width="1080" height="1920" loading="lazy"></button>
+          <button type="button" class="gallery-item"><img src="images/gallery/screen-5.webp" alt="Know exactly what is left with the skein calculator" width="1080" height="1920" loading="lazy"></button>
+          <button type="button" class="gallery-item"><img src="images/gallery/screen-6.webp" alt="Sort it your way" width="1080" height="1920" loading="lazy"></button>
+          <button type="button" class="gallery-item"><img src="images/gallery/screen-7.webp" alt="Free to organize. No subscription." width="1080" height="1920" loading="lazy"></button>
         </div>
-        <button class="carousel-scroll-btn next" aria-label="Scroll right">›</button>
+        <button class="carousel-scroll-btn next" aria-label="Next screenshots">›</button>
       </div>
     </section>
 
-    <section class="features">
-      <h2>Our Passion for Yarn</h2>
-      <p>Do you have a large collection of yarn?</p>
-      <p>We know the challenge of keeping track of it all. Yarn Stasher helps you inventory and catalog your entire stash without typing any information. Simply take a picture of your yarn labels, and Yarn Stasher's AI automatically extracts all the details—brand, color, weight, fiber content, and yardage. Let technology do the work while you focus on what you love: creating beautiful projects.</p>
+    <section class="features" aria-labelledby="passion-title">
+      <h2 id="passion-title">Made by people who love yarn</h2>
+      <p>Do you have a large collection of yarn? We know the challenge of keeping track of it all.</p>
+      <p>Yarn Stasher helps you inventory and catalog your entire stash without typing. Take a picture of your yarn labels, and Smart Scan reads the brand, colorway, weight, fiber content, and yardage for you. Let the app do the bookkeeping while you focus on what you love: making beautiful things.</p>
     </section>
 
-    <section class="coming-soon">
-      <h2>New Features - Coming Soon!</h2>
-      <p>In addition to the planned features, we also plan to tackle all the bugs listed below.</p>
-      <div class="accordion">
-        <details class="accordion-item">
-          <summary>Ply Count Data Entry</summary>
-          <p>Adds an optional section to a yarn entry about the number of plies in a yarn and a filter in the filters menu to search by ply count.</p>
-        </details>
-      </div>
-      <div class="coming-soon-known-bugs">
-        <h3>We're always improving</h3>
-        <p>Fixed in the next update: yarn with accented letters in its name (like “Café”) now sorts in normal alphabetical order instead of after Z.</p>
+    <section class="coming-soon" aria-labelledby="news-title">
+      <h2 id="news-title">What’s new &amp; what’s next</h2>
+      <div class="news-grid">
+        <div class="news-card">
+          <h3>New in version 1.14</h3>
+          <p class="news-sub">A big round of fixes, many from your emails:</p>
+          <ul class="news-list">
+            <li>Smarter search: “blue merino” finds yarn that’s both</li>
+            <li>Accented names (like Café) sort A–Z</li>
+            <li>“Hats, Gifts” makes two groups, and they stay that way after Ravelry sync</li>
+            <li>If one photo can’t be read, the rest are still added</li>
+            <li>Guest stash keeps groups and photos when you create an account</li>
+            <li>Clearer error messages and more reliable account deletion</li>
+          </ul>
+        </div>
+        <div class="news-card">
+          <h3>Coming soon</h3>
+          <ul class="news-list">
+            <li><strong>Ply count.</strong> An optional ply count on each yarn, plus a filter to search your stash by ply.</li>
+          </ul>
+          <p class="news-sub">Have an idea? <a href="mailto:support@yarnstasher.com?subject=Feature%20idea">Tell us</a>. Many of the fixes in 1.14 started as an email.</p>
+        </div>
       </div>
     </section>
 
-    <section class="contact">
-      <h2>Contact Us</h2>
-      <h3>Drop us a line!</h3>
-      <p>Have a question about scanning a yarn or verifying your email? Send us a message and we'll get back to you soon.</p>
-      <p>Have questions?</p> 
-      <p>Contact: <a href="mailto:support@yarnstasher.com">support@yarnstasher.com</a></p>
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Support</h2>
+      <p>Questions about scanning a yarn, syncing with Ravelry, or your account? The <a href="user-guide/">User Guide</a> covers most of it, step by step.</p>
+      <p>Still stuck? Email <a href="mailto:support@yarnstasher.com">support@yarnstasher.com</a> and we’ll get back to you soon.</p>
       <p class="address">ThreadSafe LLC<br>212 W Troy St Ste B<br>Dothan, AL 36303</p>
     </section>
   </main>
 
-  <div class="lightbox" id="lightbox" aria-hidden="true">
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Screenshot">
     <button class="lightbox-close" aria-label="Close">×</button>
     <img class="lightbox-img" src="" alt="">
   </div>
 
   <footer>
     <div class="footer-content">
-      <nav>
+      <nav aria-label="Footer">
         <a href="user-guide/">User Guide</a>
         <a href="privacy-policy.html">Privacy Policy</a>
         <a href="terms.html">Terms</a>
         <a href="eula.html">EULA</a>
         <a href="account-deletion.html">Account Deletion</a>
+        <a href="mailto:support@yarnstasher.com">Contact</a>
       </nav>
     </div>
-    <p class="copyright">© 2025–2026 Yarn Stasher – All Rights Reserved</p>
+    <p class="copyright">© 2025–2026 ThreadSafe LLC · Yarn Stasher – All Rights Reserved</p>
   </footer>
-  <script src="script.js"></script>
+  <script src="script.js?v=site-7"></script>
 </body>
 </html>

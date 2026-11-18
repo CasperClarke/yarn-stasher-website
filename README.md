@@ -2,6 +2,12 @@
 
 Marketing website for [Yarn Stasher](https://yarnstasher.com/) – AI-powered yarn inventory app.
 
+## Images
+
+Pages load compressed copies: `images/hero/stash-grid.webp` and `images/hero/scan-filled.webp` (hero phones, from `yarn-stasher/marketing/src/img/stash-grid.png` and `Scan_Light_Detail_Filled.png`), `images/logo-96.webp`, `logo-96.png` and `logo-180.png` (nav, favicon, home-screen icon), and `images/og-image.jpg` (link previews, made from `FeatureGraphic.png`). If you replace a source PNG, regenerate its compressed copy too.
+
+When you change `style.css` or `script.js`, bump the `?v=site-N` query in every page so returning visitors get the new files.
+
 ## Setup (GitHub Pages)
 
 1. **Create a new public repo** on GitHub (e.g. `yarn-stasher-website` or `yarn-stasher.github.io`).
